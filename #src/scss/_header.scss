@@ -1,0 +1,48 @@
+@import "_mixin.scss";
+
+.header {
+  padding: 29px 0 65px;
+
+  &-fon{
+    width: 1170px;
+    height: 550px;
+    background-image: url(../img/header_title_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &-nav{
+    padding-bottom: 35px;
+  }
+}
+
+
+
+.header-nav-item {
+  @include d-flex-center;
+  width: 1200px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 11px;
+
+  &-link {
+    line-height: 22px;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    padding: 0 39px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    @media (max-width: 768px){
+      padding: 0 17px;
+    }
+  }
+  &-link.activ{
+    color: $hover-header-color;
+  }
+  &-link:hover{
+    color: $hover-header-color;
+  }
+
+}
