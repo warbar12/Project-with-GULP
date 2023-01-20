@@ -1,4 +1,42 @@
 .footer{
   background-color: #000;
   height: 355px;
+  font-family: 'Roboto';
+
+  &_info{
+    @include d-flex-colum;
+    padding-top: 66px;
+  }
+}
+.info_title{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: $color-footer-title;
+}
+.info_text{
+  max-width: 684px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  padding: 22px 0 37px;
+}
+
+.info_text_info{
+  color: $color-footer-text;
+}
+.info_links{
+  @include d-flex-center
+}
+.info_link{
+  padding: 0 3px;
+}
+.info_about{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: $color-footer-text;
+  padding-top: 34px;
 }
