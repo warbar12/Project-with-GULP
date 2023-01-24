@@ -1,6 +1,6 @@
 .footer{
   background-color: #000;
-  height: 355px;
+  min-height: 355px;
   font-family: 'Roboto';
 
   &_info{
@@ -34,9 +34,30 @@
   padding: 0 3px;
 }
 .info_about{
+  text-align: center;
+  width: 235px;
+  padding: 34px 0;
+}
+.info_about-text{
   font-weight: 400;
-  font-size: 16px;
   line-height: 26px;
+  font-size: 16px;
   color: $color-footer-text;
-  padding-top: 34px;
+}
+
+@media (max-width:320px){
+  .info_title{
+    font-size: 14px;
+
+    &_text{
+      font-size: 12px;
+    }
+
+    &_none{
+      display: none;
+    }
+  }
+  .info_about-text{
+    font-size: 14px;
+  }
 }
